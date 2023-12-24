@@ -1,0 +1,31 @@
+
+1. In web development, the z-index property is used to control the stacking order of positioned elements on a web page. The z-index property takes a numerical value, and elements with higher z-index values will be stacked on top of elements with lower values. If two elements have the same z-index, the one that comes later in the HTML code will be stacked on top.
+div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#element1 {
+  z-index: 50;
+  background-color: red;
+}
+
+#element2 {
+  z-index: 100;
+  background-color: blue;
+}
+In this example, if element2 and element1 overlap on the page, element2 will appear on top of element1 because it has a higher z-index value (100 compared to 50).
+
+2.The translate() function within the transform property is specifically used for moving an element from its current position, either horizontally or vertically or both.
+In this example, the element with the class element will be shifted 4 pixels down from its original position. If the value were negative, like transform: translateY(-4px);, it would move the element 4 pixels up.
+
+3-
+let now = new Date();: This line creates a new Date object named now, which represents the current date and time.
+
+currentMonth = now.getMonth() + 1;: The getMonth() method of the Date object returns the zero-based month, where January is 0 and December is 11. By adding 1 to the result, you get the current month in a one-based index (January is 1, February is 2, and so on). The result is assigned to the variable currentMonth.
+
+currentDay = now.getDate();: The getDate() method of the Date object returns the day of the month (1 to 31). The result is assigned to the variable currentDay
+
+4-
+The 0 is being appended to hours to ensure that the displayed value always has two digits. This is a common practice in time-related displays where you want to ensure consistency in formatting. The goal is to make sure that single-digit hours are displayed with a leading zero.
